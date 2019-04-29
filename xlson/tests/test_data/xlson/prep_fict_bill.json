@@ -1,0 +1,2982 @@
+{
+  "main_sheet": {
+    "source_path": "/media/denis/Data/Data/Mains/bills/bill-rec/xlson/tests/test_data/xlson/xl_fict_bill.xlsx",
+    "sheet_name": "MainSheet",
+    "data_df": [
+      [
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        "Allianz SE",
+        null,
+        null
+      ],
+      [
+        null,
+        "Name",
+        "date",
+        "price"
+      ],
+      [
+        null,
+        "Denis",
+        "24.08.2018",
+        500
+      ],
+      [
+        null,
+        "Dmitry",
+        "01.04.2015",
+        364.5
+      ],
+      [
+        null,
+        null,
+        "total:",
+        864.5
+      ]
+    ],
+    "entities": null,
+    "meta_df": [
+      [
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 15,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        }
+      ],
+      [
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 16,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": "hair",
+              "color": null
+            },
+            "left": {
+              "style": "hair",
+              "color": null
+            },
+            "top": {
+              "style": "hair",
+              "color": null
+            },
+            "bottom": {
+              "style": "hair",
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": [
+            1,
+            1
+          ],
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": [
+            1,
+            1
+          ],
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        }
+      ],
+      [
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 17,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": true,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": "hair",
+              "color": null
+            },
+            "top": {
+              "style": "hair",
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 18,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": true,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": "hair",
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 19,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": true,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": "hair",
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": "hair",
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        }
+      ],
+      [
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 20,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": "hair",
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 15,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 21,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": "hair",
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        }
+      ],
+      [
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 22,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": "hair",
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": "hair",
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 23,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": "hair",
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 24,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": "hair",
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": "hair",
+              "color": null
+            }
+          }
+        }
+      ],
+      [
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 14,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": null,
+            "vertical": null,
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": null,
+            "shrinkToFit": null
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "s",
+          "style_id": 25,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": true,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "00000000",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": null,
+              "color": null
+            },
+            "left": {
+              "style": null,
+              "color": null
+            },
+            "top": {
+              "style": null,
+              "color": null
+            },
+            "bottom": {
+              "style": null,
+              "color": null
+            }
+          }
+        },
+        {
+          "data_type": "n",
+          "style_id": 26,
+          "pivotButton": false,
+          "alignment": {
+            "horizontal": "general",
+            "vertical": "bottom",
+            "indent": 0.0,
+            "relativeIndent": 0.0,
+            "justifyLastLine": null,
+            "readingOrder": 0.0,
+            "textRotation": 0,
+            "wrapText": false,
+            "shrinkToFit": false
+          },
+          "merged_with": [],
+          "merged_to": null,
+          "font": {
+            "name": "Arial",
+            "family": 2.0,
+            "sz": 10.0,
+            "b": false,
+            "i": false,
+            "u": null,
+            "strike": null,
+            "color": null,
+            "vertAlign": null,
+            "charset": 1,
+            "outline": null,
+            "shadow": null,
+            "condense": null,
+            "extend": null,
+            "scheme": null
+          },
+          "fill": {
+            "bgColor": {
+              "rgb": "FF969696",
+              "type": "rgb",
+              "tint": 0.0
+            },
+            "fgColor": {
+              "rgb": "FFB2B2B2",
+              "type": "rgb",
+              "tint": 0.0
+            }
+          },
+          "border": {
+            "outline": true,
+            "right": {
+              "style": "hair",
+              "color": null
+            },
+            "left": {
+              "style": "hair",
+              "color": null
+            },
+            "top": {
+              "style": "hair",
+              "color": null
+            },
+            "bottom": {
+              "style": "hair",
+              "color": null
+            }
+          }
+        }
+      ]
+    ],
+    "supp_sheets": [
+      "SuppSheet1",
+      "SuppSheet2"
+    ]
+  },
+  "supp_sheets": [
+    {
+      "source_path": "/media/denis/Data/Data/Mains/bills/bill-rec/xlson/tests/test_data/xlson/xl_fict_bill.xlsx",
+      "sheet_name": "SuppSheet1",
+      "data_df": [
+        [
+          null,
+          "Name",
+          "Date"
+        ],
+        [
+          null,
+          "Denis",
+          "24.08.2018"
+        ],
+        [
+          null,
+          "Dmitry",
+          "01.04.2015"
+        ]
+      ],
+      "entities": null,
+      "meta_df": [
+        [
+          {
+            "data_type": "n",
+            "style_id": 14,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": null,
+              "vertical": null,
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": null,
+              "shrinkToFit": null
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          }
+        ],
+        [
+          {
+            "data_type": "n",
+            "style_id": 14,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": null,
+              "vertical": null,
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": null,
+              "shrinkToFit": null
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          }
+        ],
+        [
+          {
+            "data_type": "n",
+            "style_id": 14,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": null,
+              "vertical": null,
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": null,
+              "shrinkToFit": null
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "source_path": "/media/denis/Data/Data/Mains/bills/bill-rec/xlson/tests/test_data/xlson/xl_fict_bill.xlsx",
+      "sheet_name": "SuppSheet2",
+      "data_df": [
+        [
+          null,
+          "Name",
+          "price"
+        ],
+        [
+          null,
+          "Denis",
+          500
+        ],
+        [
+          null,
+          "Dmitry",
+          364.5
+        ]
+      ],
+      "entities": null,
+      "meta_df": [
+        [
+          {
+            "data_type": "n",
+            "style_id": 14,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": null,
+              "vertical": null,
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": null,
+              "shrinkToFit": null
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          }
+        ],
+        [
+          {
+            "data_type": "n",
+            "style_id": 14,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": null,
+              "vertical": null,
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": null,
+              "shrinkToFit": null
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "n",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          }
+        ],
+        [
+          {
+            "data_type": "n",
+            "style_id": 14,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": null,
+              "vertical": null,
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": null,
+              "shrinkToFit": null
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "s",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          },
+          {
+            "data_type": "n",
+            "style_id": 15,
+            "pivotButton": false,
+            "alignment": {
+              "horizontal": "general",
+              "vertical": "bottom",
+              "indent": 0.0,
+              "relativeIndent": 0.0,
+              "justifyLastLine": null,
+              "readingOrder": 0.0,
+              "textRotation": 0,
+              "wrapText": false,
+              "shrinkToFit": false
+            },
+            "merged_with": [],
+            "merged_to": null,
+            "font": {
+              "name": "Arial",
+              "family": 2.0,
+              "sz": 10.0,
+              "b": false,
+              "i": false,
+              "u": null,
+              "strike": null,
+              "color": null,
+              "vertAlign": null,
+              "charset": 1,
+              "outline": null,
+              "shadow": null,
+              "condense": null,
+              "extend": null,
+              "scheme": null
+            },
+            "fill": {
+              "bgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              },
+              "fgColor": {
+                "rgb": "00000000",
+                "type": "rgb",
+                "tint": 0.0
+              }
+            },
+            "border": {
+              "outline": true,
+              "right": {
+                "style": null,
+                "color": null
+              },
+              "left": {
+                "style": null,
+                "color": null
+              },
+              "top": {
+                "style": null,
+                "color": null
+              },
+              "bottom": {
+                "style": null,
+                "color": null
+              }
+            }
+          }
+        ]
+      ]
+    }
+  ],
+  "cell_default_meta": {
+    "data_type": "n",
+    "style_id": 0,
+    "pivotButton": false,
+    "alignment": {
+      "horizontal": null,
+      "vertical": null,
+      "indent": 0.0,
+      "relativeIndent": 0.0,
+      "justifyLastLine": null,
+      "readingOrder": 0.0,
+      "textRotation": 0,
+      "wrapText": null,
+      "shrinkToFit": null
+    },
+    "merged_with": [],
+    "merged_to": null,
+    "font": {
+      "name": "Calibri",
+      "family": 2.0,
+      "sz": 11.0,
+      "b": false,
+      "i": false,
+      "u": null,
+      "strike": null,
+      "color": {
+        "type": "theme",
+        "theme": 1,
+        "tint": 0.0
+      },
+      "vertAlign": null,
+      "charset": 204,
+      "outline": null,
+      "shadow": null,
+      "condense": null,
+      "extend": null,
+      "scheme": "minor"
+    },
+    "fill": {
+      "bgColor": {
+        "rgb": "00000000",
+        "type": "rgb",
+        "tint": 0.0
+      },
+      "fgColor": {
+        "rgb": "00000000",
+        "type": "rgb",
+        "tint": 0.0
+      }
+    },
+    "border": {
+      "outline": true,
+      "right": {
+        "style": null,
+        "color": null
+      },
+      "left": {
+        "style": null,
+        "color": null
+      },
+      "top": {
+        "style": null,
+        "color": null
+      },
+      "bottom": {
+        "style": null,
+        "color": null
+      }
+    }
+  }
+}
