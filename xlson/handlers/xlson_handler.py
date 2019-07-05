@@ -1,136 +1,170 @@
 import json
-from copy import deepcopy
+from functools import reduce
+from operator import getitem
+
+from openpyxl import Workbook
 
 from jsondler.json_tools.requests import tuplize_json_coord_pairs
-from jsondler.json_tools import deepupdate, deepdiff
 from jsondler.json_tools.serialization import serialize_field
+from xlson._lib.coords_tools import get_xl_coord
+from xlson.scheme import EntityInfo, XLSonScheme, XLSonSheetScheme
+from xlson.formatting import CELL_DEFAULT_META, fill_cell_meta
 
 
-class XLSonHandler(object):
+class XLSonHandler(XLSonScheme):
 
-    cell_default_meta = {
-        'data_type': 'n',
-        'style_id': 0,
-        'pivotButton': False,
-        'alignment': {
-            'horizontal': None,
-            'vertical': None,
-            'indent': 0.0,
-            'relativeIndent': 0.0,
-            'justifyLastLine': None,
-            'readingOrder': 0.0,
-            'textRotation': 0,
-            'wrapText': None,
-            'shrinkToFit': None
-        },
-        'merged_with': [],
-        'merged_to': None,
-        'font': {
-            'name': 'Calibri',
-            'family': 2.0,
-            'sz': 11.0,
-            'b': False,
-            'i': False,
-            'u': None,
-            'strike': None,
-            'color': {
-                'type': 'theme',
-                'theme': 1,
-                'tint': 0.0
-            },
-            'vertAlign': None,
-            'charset': 204,
-            'outline': None,
-            'shadow': None,
-            'condense': None,
-            'extend': None,
-            'scheme': 'minor'
-        },
-        'fill': {
-            'bgColor': {
-                'rgb': '00000000',
-                'type': 'rgb',
-                'tint': 0.0
-            },
-            'fgColor': {
-                'rgb': '00000000',
-                'type': 'rgb',
-                'tint': 0.0
-            },
-        },
-        'border': {
-            'outline': True,
-            'right': {
-                'style': None,
-                'color': None
-            },
-            'left': {
-                'style': None,
-                'color': None
-            },
-            'top': {
-                'style': None,
-                'color': None
-            },
-            'bottom': {
-                'style': None,
-                'color': None
-            },
-        },
-    }
-
-    def __init__(self, xlson):
-        self._xlson = XLSonHandler.prepare_xlson(xlson)
-        if "cell_default_meta" in xlson:
-            self.cell_default_meta = self._xlson["cell_default_meta"]
+    @property
+    def XLSonSheetHandler(self):
+        return XLSonSheetHandler
 
     @classmethod
     def load(cls, xlson_path):
         with open(xlson_path) as xlson_f:
             xlson = tuplize_coords_in_prep_xl(json.load(xlson_f))
-        return cls(xlson=xlson)
+        return cls.load_from_dict(in_dict=xlson)
 
     def dump(self, xlson_path):
         xlson_f = open(xlson_path, 'w')
         json.dump(self.xlson, xlson_f, indent=2, default=serialize_field, ensure_ascii=False)
         xlson_f.close()
+        return xlson_path
+
+    def to_xlsx(self, xlsx_path):
+        wb = Workbook()
+        ws_0 = wb.active
+        for xlson_sheet in [self.main_sheet] + \
+                           [self.XLSonSheetHandler.load_from_dict(supp_sheet) for supp_sheet in self.supp_sheets]:
+            ws = wb.create_sheet(xlson_sheet.sheet_name)
+            data_df = xlson_sheet.data_df
+            meta_df = xlson_sheet.meta_df
+            for i in range(len(data_df)):
+                for j in range(len(data_df[0])):
+                    xl_coord = None
+                    xl_coord = get_xl_coord(i, j)
+                    ws[xl_coord] = data_df[i][j]
+                    fill_cell_meta(ws[xl_coord], meta_df[i][j])
+                    if meta_df[i][j]["merged_with"]:
+                        ws.merge_cells(xl_coord+":"+get_xl_coord(*meta_df[i][j]["merged_with"][-1]))
+        wb.remove_sheet(ws_0)
+        wb.save(xlsx_path)
 
     @property
     def xlson(self):
-        xlson = deepcopy(self._xlson)
-        xlson['main_sheet']['meta_df'] = self._xlson['main_sheet']['meta_df'].meta_df
-        for supp_sheet in xlson['supp_sheets']:
-            supp_sheet['meta_df'] = supp_sheet['meta_df'].meta_df
-        return xlson
+        return XLSonScheme(main_sheet=self.main_sheet.get_json(),
+                           supp_sheets=self.supp_sheets,
+                           source_path=self.source_path).get_json()
+
+    def get_json(self):
+        return self.xlson
+
+    @classmethod
+    def load_from_dict(cls, in_dict):
+        xlson_handler = super(XLSonHandler, cls).load_from_dict(in_dict=in_dict)
+        xlson_handler.main_sheet = XLSonSheetHandler.load_from_dict(xlson_handler.main_sheet, main_sheet=True)
+        return xlson_handler
+
+    def get_supp_sheet(self, ):
+        return
+
+    def iterate_supp_sheets(self):
+        yield
 
     def __getitem__(self, item):
-        return self._xlson[item]
+        return self.__dict__[item]
 
     def __setitem__(self, key, value):
-        self._xlson[key] = value
-
-    def __delitem__(self, key):
-        del self._xlson[key]
+        self.__dict__[key] = value
 
     def __eq__(self, other):
-        return self._xlson == other.xlson
+        return self.xlson == other.xlson
 
-    def pop(self, key):
-        return self._xlson.pop(key)
+
+class XLSonSheetHandler(XLSonSheetScheme):
+
+    class MainSheetScheme(XLSonSheetScheme):
+        main_sheet = True
+
+    def get_json(self):
+        # Hardcode keys - be careful
+        got_json = super(XLSonSheetHandler, self).get_json()
+        meta_df_path = XLSonSheetScheme.attr_scheme()["meta_df"]
+        reduce(getitem, meta_df_path[:-1], got_json)[meta_df_path[-1]] = self.meta_df.meta_df
+        return got_json
+
+    @classmethod
+    def load_from_dict(cls, in_dict, main_sheet=False, cell_default_meta=None, additional_entity_attrs=None):
+        if main_sheet:
+            sheet_scheme = cls.MainSheetScheme.load_from_dict(in_dict=in_dict)
+        else:
+            sheet_scheme = super(XLSonSheetHandler, cls).load_from_dict(in_dict=in_dict)
+        sheet_handler = cls.load_from_scheme(sheet_scheme)
+        sheet_handler.main_sheet = main_sheet
+
+        if cell_default_meta is not None:
+            sheet_handler.cell_default_meta = cell_default_meta
+        elif not sheet_handler.cell_default_meta:
+            sheet_handler.cell_default_meta = CELL_DEFAULT_META
+        sheet_handler.meta_df = CellsMetaDF(sheet_handler.meta_df, sheet_handler.cell_default_meta)
+
+        if additional_entity_attrs is None:
+            additional_entity_attrs = cls.get_additional_entity_attrs(sheet_handler.entities)
+        sheet_handler.additional_entities_attrs = additional_entity_attrs
+
+        return sheet_handler
+
+    @classmethod
+    def load_from_scheme(cls, sheet_scheme):
+        sheet_handler = cls()
+        sheet_handler.__dict__ = sheet_scheme.__dict__
+        sheet_handler.main_sheet = sheet_scheme.main_sheet
+        return sheet_handler
+
+    def get_entity(self, ):
+        return
+
+    def iterate_entities(self):
+        yield
+
+    def __getitem__(self, item):
+        return self.__dict__[item]
+
+    def __setitem__(self, key, value):
+        self.__dict__[key] = value
+
+    @property
+    def sheet_name(self):
+        return self._sheet_name
+
+    @sheet_name.setter
+    def sheet_name(self, value):
+        # TODO: write code for managing source dict
+        self._sheet_name = value
 
     @staticmethod
-    def prepare_xlson(xlson):
-        if "cell_default_meta" in xlson:
-            cell_default_meta = xlson["cell_default_meta"]
-        else:
-            cell_default_meta = XLSonHandler.cell_default_meta
-        prep_xlson = deepcopy(xlson)
-        prep_xlson['main_sheet']['meta_df'] = CellsMetaDF(xlson['main_sheet']['meta_df'],
-                                                          cell_default_meta=cell_default_meta)
-        for supp_sheet in prep_xlson['supp_sheets']:
-            supp_sheet['meta_df'] = CellsMetaDF(supp_sheet['meta_df'],
-                                                cell_default_meta=cell_default_meta)
-        return prep_xlson
+    def get_additional_entity_attrs(entities_list):
+        """
+
+        :param entities_list: list of
+        :return:
+        """
+        additional_entity_attrs = list()
+        for entity_dict in entities_list:
+            for attr in entity_dict.keys():
+                if attr not in EntityInfo.attr_scheme() and attr not in additional_entity_attrs:
+                    additional_entity_attrs.append(attr)
+        return additional_entity_attrs
+
+    @property
+    def EntityHandler(self):
+        class EntityHandler(EntityInfo):
+            additional_attrs = self.additional_entities_attrs
+
+        return EntityHandler
+
+    def get_EntityHandler(self, additional_attrs=None):
+        if additional_attrs is not None:
+            self.additional_entities_attrs = additional_attrs
+        return self.EntityHandler
 
 
 class CellsMetaDF(object):

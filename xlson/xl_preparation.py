@@ -1,17 +1,15 @@
-import json
 import datetime
 
 from openpyxl import load_workbook
 from openpyxl.utils import coordinate_to_tuple
-from openpyxl.reader.excel import InvalidFileException
-from xlrd import open_workbook
+from xlrd import open_workbook, xldate_as_tuple
 
-from jsondler.json_tools import deepdiff
 from xlson.constants import xlson_logger
-from xlson.handlers import XLSonHandler
+from xlson.formatting import cell_meta_to_dict
+from xlson.handlers import XLSonHandler, XLSonSheetHandler
+from xlson.formatting import CELL_DEFAULT_META
 from xlson._lib.general_utils import digitalize_str
 from xlson._lib.coords_tools import coords_from_range
-from xlson._lib.obj_tools import expand_attrs_dict
 
 
 def prepare_xl(xl_path, data_only=False, values_strip=None, digitalization=True, crop_empty=True, n_rows=None):
@@ -32,16 +30,18 @@ def prepare_xl(xl_path, data_only=False, values_strip=None, digitalization=True,
                                   crop_empty=crop_empty,
                                   n_rows=n_rows)
         except:
-            return XLSonHandler({
-                "main_sheet": {
+            xlson_logger.warning("cannot read '%s'" % xl_path)
+            return XLSonHandler(
+                main_sheet=XLSonSheetHandler.load_from_dict({
                     "data_df": [["an error", "occurred", "while", "processing", xl_path]],
                     "meta_df": [[None] * 5],
-                    "entities": None,
-                    "supp_sheets": list(),
-                },
-                "supp_sheets": list(),
-                "cell_default_meta": XLSonHandler.cell_default_meta,
-            })
+                    "entities": XLSonSheetHandler.entites_0,
+                    "supp_sheets": XLSonSheetHandler.supp_sheets_0,
+                    "cell_default_meta": CELL_DEFAULT_META,
+                }, main_sheet=True),
+                supp_sheets = list(),
+                source_path = xl_path,
+            )
 
 
 def prepare_new_xl(new_xl_path, data_only=False, values_strip=None, digitalization=True, crop_empty=True, n_rows=None):
@@ -53,14 +53,14 @@ def prepare_new_xl(new_xl_path, data_only=False, values_strip=None, digitalizati
     for sheet_name in wb.sheetnames:
         merged_cells_dict = get_merged_cells(wb[sheet_name])
         sheet_dict = {
-            'source_path': new_xl_path,
+            'cell_default_meta': CELL_DEFAULT_META,
             'sheet_name': sheet_name,
             'data_df': iterate_sheet(wb[sheet_name],
                                      cell_func=get_cell_value,
                                      add_args_dict={'value_strip': values_strip,
                                                     'digitalization': digitalization},
                                      n_rows=n_rows),
-            'entities': None,
+            'entities': XLSonSheetHandler.entites_0,
         }
 
         if crop_empty:
@@ -84,9 +84,9 @@ def prepare_new_xl(new_xl_path, data_only=False, values_strip=None, digitalizati
         n += 1
     main_sheet['supp_sheets'] = [supp_sheet['sheet_name'] for supp_sheet in supp_sheets_list]
     xlson_logger.info("%s conversion to xlson finished" % new_xl_path)
-    return XLSonHandler({'main_sheet': main_sheet,
-                         'supp_sheets': supp_sheets_list,
-                         'cell_default_meta': XLSonHandler.cell_default_meta,})
+    return XLSonHandler(main_sheet=XLSonSheetHandler.load_from_dict(main_sheet, main_sheet=True),
+                        supp_sheets=supp_sheets_list,
+                        source_path=new_xl_path)
 
 
 def get_last_cell(data_df):
@@ -148,8 +148,11 @@ def iterate_sheet(sheet, cell_func=None, add_args_dict=None, last_cell=None, n_r
     return rows_list
 
 
-def get_cell_value(cell, value_strip=None, digitalization=True):
-    v = cell.value
+def get_cell_value(cell, value_strip=None, digitalization=True, special_formating=None, **kwargs):
+    if callable(special_formating):
+        v = special_formating(cell, **kwargs)
+    else:
+        v = cell.value
     if type(v) is datetime.datetime:
         return v.strftime("%d.%m.%Y")
     if type(v) is str:
@@ -163,39 +166,6 @@ def get_cell_value(cell, value_strip=None, digitalization=True):
     return v
 
 
-def cell_meta_to_dict(cell, merged_cells_dict, jsonize=False):
-    cell_coords_pair = tuple(map(lambda c: c - 1, coordinate_to_tuple(cell.coordinate)))
-    meta_dict = {
-        'data_type': cell.data_type,
-        'style_id': cell.style_id,
-        'pivotButton': cell.pivotButton,
-        'alignment': cell.alignment.__dict__,
-        'merged_with': merged_cells_dict["merged_with"].get(cell_coords_pair, list()),
-        'merged_to': merged_cells_dict["merged_to"].get(cell_coords_pair, None),
-        'font': expand_attrs_dict(cell.font.__dict__, 'color'),
-        'fill': {
-            'bgColor': cell.fill.bgColor.__dict__,
-            'fgColor': cell.fill.fgColor.__dict__,
-        },
-        'border': {
-            'outline': cell.border.outline,
-            'right': expand_attrs_dict(cell.border.right.__dict__, 'color'),
-            'left': expand_attrs_dict(cell.border.left.__dict__, 'color'),
-            'top': expand_attrs_dict(cell.border.top.__dict__, 'color'),
-            'bottom': expand_attrs_dict(cell.border.bottom.__dict__, 'color'),
-        },
-    }
-
-    if not deepdiff(d1=XLSonHandler.cell_default_meta, d2=meta_dict):
-        meta_dict = None
-    #meta_dict = deepdiff(d1=XLSonHandler.cell_default_meta, d2=meta_dict)
-
-    if jsonize:
-        return json.dumps(meta_dict)
-    else:
-        return meta_dict
-
-
 def prepare_old_xl(old_xl_path, values_strip=None, digitalization=True, crop_empty=True, n_rows=None):
     # TODO: implement formatting info conversion to meta_df
     xlson_logger.info("%s conversion to xlson started" % old_xl_path)
@@ -206,14 +176,16 @@ def prepare_old_xl(old_xl_path, values_strip=None, digitalization=True, crop_emp
     for sheet_name in wb.sheet_names():
         # merged_cells_dict = get_merged_cells(wb.sheet_by_name(sheet_name))  # TODO: implement meged cells preparation
         sheet_dict = {
-            'source_path': old_xl_path,
+            'cell_default_meta': CELL_DEFAULT_META,
             'sheet_name': sheet_name,
             'data_df': iterate_sheet(wb.sheet_by_name(sheet_name).get_rows(),
                                      cell_func=get_cell_value,
                                      add_args_dict={'value_strip': values_strip,
-                                                    'digitalization': digitalization},
+                                                    'digitalization': digitalization,
+                                                    'special_formating': _check_xlrd_types,
+                                                    'datemode': wb.datemode},
                                      n_rows=n_rows),
-            'entities': None,
+            'entities': XLSonSheetHandler.entites_0,
         }
 
         if crop_empty:
@@ -244,6 +216,21 @@ def prepare_old_xl(old_xl_path, values_strip=None, digitalization=True, crop_emp
         n += 1
     main_sheet['supp_sheets'] = [supp_sheet['sheet_name'] for supp_sheet in supp_sheets_list]
     xlson_logger.info("%s conversion to xlson finished" % old_xl_path)
-    return XLSonHandler({'main_sheet': main_sheet,
-                         'supp_sheets': supp_sheets_list,
-                         'cell_default_meta': XLSonHandler.cell_default_meta,})
+    return XLSonHandler(main_sheet=XLSonSheetHandler.load_from_dict(main_sheet, main_sheet=True),
+                        supp_sheets=supp_sheets_list,
+                        source_path=old_xl_path)
+
+
+def _check_xlrd_types(cell, **kwargs):
+    v = cell.value
+    if cell.ctype == 0 or cell.ctype == 6:
+        return None
+    if cell.ctype == 2:
+        if v - float(int(v)) > 0.0:
+            return v
+        else:
+            return int(v)
+    if cell.ctype == 3:
+        return datetime.datetime(*xldate_as_tuple(v, kwargs.get("datemode", 0)))
+        # return datetime.datetime(1900, 1, 1) + datetime.timedelta(int(v)-2)
+    return v

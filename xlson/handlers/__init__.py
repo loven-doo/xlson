@@ -1,1 +1,1 @@
-from xlson.handlers.xlson_handler import XLSonHandler
+from xlson.handlers.xlson_handler import XLSonHandler, XLSonSheetHandler

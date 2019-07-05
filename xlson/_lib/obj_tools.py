@@ -6,3 +6,12 @@ def expand_attrs_dict(attrs_dict, *keys):
         except AttributeError:
             pass
     return new_attrs_dict
+
+
+def deepupdate_attrs(obj, attr_dict):
+    for attr in obj.__dict__:
+        try:
+            obj = deepupdate_attrs(obj.__dict__[attr], attr_dict[attr])
+        except AttributeError:
+            obj.__dict__[attr] = attr_dict[attr]
+    return obj
