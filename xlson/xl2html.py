@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 from jsondler.json_tools import sort_dicts_list
 
 from xlson import prepare_xl
@@ -14,7 +16,7 @@ def xl_to_html(xl_path, html_path, sheet_name=None):
 
 
 def sheet_to_html(xlson_sheet, html_path, ent_colors_dict=None, **kwargs):
-    assert isinstance(xlson_sheet, XLSonSheetHandler), "ERROR: the value for argument 'xlson_sheet' must be " \
+    assert isinstance(xlson_sheet, XLSonSheetHandler), "ERROR: the value for argument 'xlson_sheet' should be " \
                                                        "an object of xlson.handlers.XLSonSheetHandler class"
     encoding = kwargs.get("encoding", "utf-8")
     html_f = open(html_path, 'w', encoding=encoding)
@@ -26,7 +28,7 @@ def sheet_to_html(xlson_sheet, html_path, ent_colors_dict=None, **kwargs):
     meta = xlson_sheet.meta_df
     EntityHandler=xlson_sheet.EntityHandler
     try:
-        ents = xlson_sheet.entities
+        ents = deepcopy(xlson_sheet.entities)
     except KeyError:
         ents = list()
     n_rows = len(data)
