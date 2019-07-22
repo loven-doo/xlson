@@ -2,4 +2,4 @@ PyYAML >= 3.13
 openpyxl >= 2.5.5, <= 2.5.14
 xlrd >= 1.2.0
 pillow >= 5.3.0
-jsondler >= 0.0.1
+jsondler >= 0.0.4

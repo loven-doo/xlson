@@ -1,5 +1,3 @@
-from copy import deepcopy
-
 from jsondler.json_tools import sort_dicts_list
 
 from xlson import prepare_xl
@@ -28,7 +26,7 @@ def sheet_to_html(xlson_sheet, html_path, ent_colors_dict=None, **kwargs):
     meta = xlson_sheet.meta_df
     EntityHandler=xlson_sheet.EntityHandler
     try:
-        ents = deepcopy(xlson_sheet.entities)
+        ents = xlson_sheet.entities
     except KeyError:
         ents = list()
     n_rows = len(data)
@@ -115,7 +113,7 @@ def entities_by_cells(sorted_ents, EntityHandler):
             row = ent.ent_location.row
             col = ent.ent_location.col
             cell_ents_list = list()
-        cell_ents_list.append(ent)
+        cell_ents_list.append(ent.get_json())
     yield {"row": row, "col": col, "entities": cell_ents_list}
 
 

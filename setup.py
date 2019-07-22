@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='xlson',
-    version='0.0.4',
+    version='0.0.5',
     author="Denis Moshensky",
     author_email="loven7doo@gmail.com",  
     description="Python package for transforming Excel files to JSON files and manipulating them",
@@ -20,7 +20,7 @@ setup(
     packages=find_packages(),
     package_data={},
     install_requires=[
-        'jsondler >= 0.0.1',
+        'jsondler >= 0.0.4',
         'PyYAML >= 3.13',
         'openpyxl >= 2.5.5, <= 2.5.14',
         'xlrd >= 1.2.0',
