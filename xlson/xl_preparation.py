@@ -1,4 +1,5 @@
 import datetime
+from copy import deepcopy
 
 from openpyxl import load_workbook
 from openpyxl.utils import coordinate_to_tuple
@@ -60,7 +61,7 @@ def prepare_new_xl(new_xl_path, data_only=False, values_strip=None, digitalizati
                                      add_args_dict={'value_strip': values_strip,
                                                     'digitalization': digitalization},
                                      n_rows=n_rows),
-            'entities': XLSonSheetHandler.entites_0,
+            'entities': deepcopy(XLSonSheetHandler.entites_0),
         }
 
         if crop_empty:
@@ -185,7 +186,7 @@ def prepare_old_xl(old_xl_path, values_strip=None, digitalization=True, crop_emp
                                                     'special_formating': _check_xlrd_types,
                                                     'datemode': wb.datemode},
                                      n_rows=n_rows),
-            'entities': XLSonSheetHandler.entites_0,
+            'entities': deepcopy(XLSonSheetHandler.entites_0),
         }
 
         if crop_empty:
