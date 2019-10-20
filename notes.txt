@@ -1,0 +1,12 @@
+Features for openpyxl (xlson2xl facilitation):
+- 'Font' object could consist from subfonts:
+   font = Font({(start1, end1): font1,
+                (start2, end2): font2)})
+- new 'CellStyle' object:
+  CellStyle.from_dict()
+  CellStyle.to_dict()
+- add 'apply_style' and 'get_style' mwthods to 'Cell' object:
+  Cell.apply_style(CellStyle)
+  Cell.get_style() -> CellStyle
+- enable 'Cell.__dict__'
+- make 'deepupdate_attrs' working for 'Cell' object
